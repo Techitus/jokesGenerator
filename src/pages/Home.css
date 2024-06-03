@@ -1,13 +1,20 @@
+.wrapper{
+  border-radius: 42px;
+background: #000000;
+box-shadow:  -8px -8px 65px #aaa3a3,
+             8px 8px 65px #000000;
+}
+
 .component {
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 blockquote {
     background:
-        linear-gradient(to right, #ae0fce 6px, transparent 4px) 0 100%,
-        linear-gradient(to left, #ae0fce 6px, transparent 4px) 100% 0,
-        linear-gradient(to bottom, #ae0fce 6px, transparent 4px) 100% 0,
-        linear-gradient(to top, #ae0fce 6px, transparent 4px) 0 100%;
+        linear-gradient(to right, #03cf40  6px, transparent 4px) 0 100%,
+        linear-gradient(to left, #03cf40 6px, transparent 4px) 100% 0,
+        linear-gradient(to bottom, #03cf40 6px, transparent 4px) 100% 0,
+        linear-gradient(to top, #03cf40  6px, transparent 4px) 0 100%;
     background-repeat: no-repeat;
     background-size: 20px 20px;
 }
@@ -51,7 +58,7 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background: #971797;
+    background: #179737;
     cursor: pointer;
     transition: all 450ms ease-in-out;
   }

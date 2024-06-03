@@ -25,7 +25,7 @@ export function fetchJoke (){
     return async function fetchJokeThunk(dispatch){
     dispatch(setStatus(STATUSES.LOADING))
     try{
-        const response = await API.get("Programming")
+        const response = await API.get("Programming,Dark,Pun")
         if(response.status === 200){
             dispatch(setJokes(response.data))
             dispatch(setStatus(STATUSES.SUCCESS))

@@ -10,18 +10,17 @@ const Home = () => {
     const dispatch = useDispatch()
     useEffect(()=>{
         dispatch(fetchJoke())
-    },[fetchJoke])
+    },[])
     const nextJoke = ()=>{
         dispatch(fetchJoke())
     }
   return (
     <>
-    <div className="wrapper flex justify-between items-center  ml-44 mt-[10%]">
-      <section className="component bg-black p-10 mx-1 md:mx-10 ">
+    <div className=" flex justify-between items-center  absolute mt-[12%] w-[60%] ml-[27%]">
+      <div className=" wrapper component p-10 mx-1 md:mx-10  w-[70%]">
     <h1 className="text-5xl font-bold text-center gredient-text"> Generate the Random Joke</h1>
-		<blockquote className="relative text-white text-center p-10 w-full m-1">
-			"{jokes?.setup} <span className="text-[#00ff00]">"{jokes?.delivery}"</span>"
-			
+		<blockquote className="relative text-white text-center p-10  m-1">
+			"{jokes?.setup} <span className="text-[#00ff00]">"{jokes?.delivery}"</span>"	
 		</blockquote>
     <button onClick={nextJoke} className="btn text-center ml-[45%]">
     <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" className="sparkle">
@@ -30,7 +29,7 @@ const Home = () => {
 
     <span className="text">Generate</span>
 </button>
-	</section>
+	</div>
   </div>
     </>
   )
